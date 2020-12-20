@@ -8,7 +8,7 @@ client = discord.Client()
 #load_dotenv()
 #TOKEN = os.getenv('DISCORD_TOKEN')
 
-TOKEN = process.env.key_one
+TOKEN = process.env.DISCORD_TOKEN
 
 holding = 0.0
 
