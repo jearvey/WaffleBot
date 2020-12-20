@@ -5,8 +5,10 @@ import re
 
 client = discord.Client()
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+#load_dotenv()
+#TOKEN = os.getenv('DISCORD_TOKEN')
+
+TOKEN = process.env.key_one
 
 holding = 0.0
 
