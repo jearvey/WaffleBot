@@ -2,13 +2,14 @@ import discord
 import os
 from dotenv import load_dotenv
 import re
+from boto.s3.connection import S3Connection
 
 client = discord.Client()
 
 #load_dotenv()
 #TOKEN = os.getenv('DISCORD_TOKEN')
-
-TOKEN = process.env.DISCORD_TOKEN
+TOKEN = S3Connection(os.environ['DISCORD_TOKEN'])
+#TOKEN = process.env.DISCORD_TOKEN
 
 holding = 0.0
 
